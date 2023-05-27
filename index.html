@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hare Krishna Creations</title>
+	<!-- Include Tailwind CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+	<style>
+		/* Additional CSS styles */
+		.header-bg {
+			background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('header-bg.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.section-bg {
+			background-color: #F8F8F8;
+		}
+
+		/* Hover Animations */
+		.hover-scale:hover {
+			transform: scale(1.05);
+		}
+
+		.hover-rotate:hover {
+			transform: rotate(5deg);
+		}
+	</style>
+</head>
+
+<body class="bg-gray-100">
+	<header class="text-center py-12 header-bg">
+		<h1 class="text-4xl text-white font-bold">Hare Krishna Creations</h1>
+	</header>
+
+	<nav class="bg-gray-800 py-4">
+		<div class="container mx-auto flex justify-center">
+			<a href="#home" class="text-white hover:text-gray-300 mx-2">Home</a>
+			<a href="#about" class="text-white hover:text-gray-300 mx-2">About</a>
+			<a href="#products" class="text-white hover:text-gray-300 mx-2">Products</a>
+			<a href="#contact" class="text-white hover:text-gray-300 mx-2">Contact</a>
+		</div>
+	</nav>
+
+	<section id="home" class="text-center py-16">
+		<h2 class="text-3xl text-gray-800 font-bold">Welcome to Hare Krishna Creations!</h2>
+		<p class="text-gray-700 mt-4">Discover the beauty and spirituality of our handmade creations.</p>
+	</section>
+
+	<section id="about" class="section-bg">
+		<div class="container mx-auto py-16">
+			<h2 class="text-3xl text-gray-800 font-bold text-center">About Us</h2>
+			<p class="text-gray-700 mt-4">Hare Krishna Creations is a dedicated community of artisans who create unique
+				and spiritual items inspired by the teachings of Lord Krishna. Our creations reflect the rich culture
+				and devotion of the Hare Krishna movement.</p>
+		</div>
+	</section>
+
+	<section id="products" class="text-center py-16">
+		<div class="container mx-auto">
+			<h2 class="text-3xl text-gray-800 font-bold mb-8">Our Products</h2>
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+				<div class="bg-white shadow-lg rounded-lg p-4 hover-scale">
+					<h3 class="text-xl text-gray-800 font-bold">Deity Jewelry</h3>
+					<p class="text-gray-700 mt-2">Exquisite jewelry for adorning the deities.</p>
+				</div>
+				<div class="bg-white shadow-lg rounded-lg p-4 hover-scale">
+					<h3 class="text-xl text-gray-800 font-bold">Incense and Fragrances</h3>
+					<p class="text-gray-700 mt-2">Fragrant incense and aromatic oils for divine atmosphere.</p>
+				</div>
+				<div class="bg-white shadow-lg rounded-lg p-4 hover-scale">
+					<h3 class="text-xl text-gray-800 font-bold">Devotional Clothing</h3>
+					<p class="text-gray-700 mt-2">Traditional attire for devotional practices.</p>
+				</div>
+				<div class="bg-white shadow-lg rounded-lg p-4 hover-scale">
+					<h3 class="text-xl text-gray-800 font-bold">Artwork and Paintings</h3>
+					<p class="text-gray-700 mt-2">Vibrant paintings depicting Krishna's pastimes.</p>
+				</div>
+				<div class="bg-white shadow-lg rounded-lg p-4 hover-scale">
+					<h3 class="text-xl text-gray-800 font-bold">Spiritual Books and Literature</h3>
+					<p class="text-gray-700 mt-2">Sacred texts and spiritual literature for seekers.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section-bg">
+		<div class="container mx-auto py-16">
+			<h2 class="text-3xl text-gray-800 font-bold text-center">Contact Us</h2>
+			<p class="text-gray-700 mt-4 text-center">For inquiries or orders, please reach out to us:</p>
+			<p class="text-gray-700 mt-2 text-center">Email: info@harekrishnacreations.com</p>
+			<p class="text-gray-700 mt-2 text-center">Phone: +1 123-456-7890</p>
+		</div>
+		<div class="bg-gray-200 py-8">
+			<div class="container mx-auto flex justify-center">
+				<img src="qr-placeholder.png" alt="QR Code" class="h-24 w-24">
+      </div>
+			</div>
+	</section>
+
+	<footer class="bg-gray-800 py-4">
+		<p class="text-center text-white">&copy; 2023 Hare Krishna Creations. All rights reserved.</p>
+	</footer>
+
+	<!-- Add scripts for animations or other dynamic features if needed -->
+</body>
+
+</html>
