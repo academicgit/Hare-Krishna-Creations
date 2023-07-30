@@ -5,12 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hare Krishna Creations</title>
+	<!-- Include Placeholder Images -->
+	<link href="https://picsum.photos/250" rel="preload" as="image">
+	<link href="https://picsum.photos/250" rel="preload" as="image">
+
 	<!-- Include Tailwind CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 	<style>
 		/* Additional CSS styles */
 		.header-bg {
-			background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('header-bg.jpg');
+			background-color: #05e8ba;
+			background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%),url('./assets/header-bg.png');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -28,13 +33,26 @@
 		.hover-rotate:hover {
 			transform: rotate(5deg);
 		}
+		
 	</style>
 </head>
 
 <body class="bg-gray-100">
-	<header class="text-center py-12 header-bg">
-		<h1 class="text-4xl text-white font-bold">Hare Krishna Creations</h1>
-	</header>
+		<header class="relative text-center py-12 header-bg">
+			<!-- Placeholder Images -->
+			<div class="absolute left-0 top-1/2 transform -translate-y-1/2 px-5">
+				<img src="./assets/Left.png" alt="Left Placeholder Image"
+					class="h-20 w-20 md:h-32 md:w-32 rounded-md">
+			</div>
+			<div class="absolute right-0 top-1/2 transform -translate-y-1/2 px-5">
+				<img src="./assets/Right.png" alt="Right Placeholder Image"
+					class="h-20 w-20 md:h-32 md:w-32 rounded-md">
+			</div>
+		
+			<!-- H1 Heading -->
+			<h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-bold">Hare Krishna Creations</h1>
+		</header>
+
 
 	<nav class="bg-gray-800 py-4">
 		<div class="container mx-auto flex justify-center">
@@ -53,7 +71,7 @@
 	<section id="about" class="section-bg">
 		<div class="container mx-auto py-16">
 			<h2 class="text-3xl text-gray-800 font-bold text-center">About Us</h2>
-			<p class="text-gray-700 mt-4">Hare Krishna Creations is a dedicated community of Krishna Devotees who create unique
+			<p class="text-gray-700 mt-4 text-center">Hare Krishna Creations is a dedicated community of Krishna Devotees who create unique
 				and spiritual items inspired by the teachings of Lord Krishna. Our creations reflect the rich culture
 				and devotion of the Hare Krishna movement.</p>
 		</div>
